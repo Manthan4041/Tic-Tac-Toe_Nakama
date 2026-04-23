@@ -1,0 +1,24 @@
+name: tictactoe-nakama
+data_dir: "./data/"
+
+logger:
+  level: "INFO"
+
+console:
+  port: 7351
+  username: "admin"
+  password: "password"
+
+runtime:
+  js_entrypoint: "build/index.js"
+
+session:
+  token_expiry_sec: 7200
+
+socket:
+  outgoing_queue_size: 64
+
+match:
+  input_queue_size: 128
+  call_queue_size: 128
+  deferred_queue_size: 128
